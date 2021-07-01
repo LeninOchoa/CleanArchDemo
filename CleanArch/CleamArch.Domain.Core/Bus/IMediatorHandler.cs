@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using CleamArch.Domain.Core.Commands;
+using CleanArch.Domain.Core.Commands;
 
-namespace CleamArch.Domain.Core.Bus
+namespace CleanArch.Domain.Core.Bus
 {
     public interface IMediatorHandler
     {

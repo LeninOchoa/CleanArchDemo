@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace CleamArch.Domain.Core.Events
+namespace CleanArch.Domain.Core.Events
 {
     public abstract class Message: IRequest<bool>
     {

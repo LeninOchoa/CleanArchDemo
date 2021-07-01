@@ -1,7 +1,7 @@
 ﻿using System;
-using CleamArch.Domain.Core.Events;
+using CleanArch.Domain.Core.Events;
 
-namespace CleamArch.Domain.Core.Commands
+namespace CleanArch.Domain.Core.Commands
 {
     public abstract class Command : Message
     {

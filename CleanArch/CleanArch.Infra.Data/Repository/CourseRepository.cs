@@ -7,7 +7,7 @@ namespace CleanArch.Infra.Data.Repository
 {
     public class CourseRepository : ICourseRepository
     {
-        private UniDbContext _uniDbContext;
+        private readonly UniDbContext _uniDbContext;
 
         public CourseRepository(UniDbContext uniDbContext)
         {
@@ -17,6 +17,12 @@ namespace CleanArch.Infra.Data.Repository
         public IEnumerable<Course> GetCourses()
         {
             return _uniDbContext.Courses;
+        }
+
+        public void Add(Course course)
+        {
+            _uniDbContext.Courses.Add(course);
+            _uniDbContext.SaveChanges();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
-using CleamArch.Domain.Core.Bus;
-using CleamArch.Domain.Core.Commands;
+using CleanArch.Domain.Core.Bus;
+using CleanArch.Domain.Core.Commands;
 using MediatR;
 
 namespace CleanArch.Infra.Bus

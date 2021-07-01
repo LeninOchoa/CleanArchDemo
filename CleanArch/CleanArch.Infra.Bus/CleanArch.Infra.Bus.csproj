@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CleamArch.Domain.Core\CleamArch.Domain.Core.csproj" />
+    <ProjectReference Include="..\CleamArch.Domain.Core\CleanArch.Domain.Core.csproj" />
   </ItemGroup>
 
 </Project>
