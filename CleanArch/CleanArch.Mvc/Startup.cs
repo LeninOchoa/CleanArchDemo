@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CleanArch.Infra.Data.Context;
 
 namespace CleanArch.Mvc
 {
@@ -29,7 +30,14 @@ namespace CleanArch.Mvc
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("TestIdentityConnection")));
+                    Configuration.GetConnectionString("TestIdentityConnection"))); 
+            
+            services.AddDbContext<UniDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("UniDbConnection")));
+
+
+
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
