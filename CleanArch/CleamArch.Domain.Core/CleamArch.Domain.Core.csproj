@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="9.0.0" />
+    <Folder Include="Commands\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CleamArch.Domain.Core\CleamArch.Domain.Core.csproj" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
   </ItemGroup>
 
 </Project>
