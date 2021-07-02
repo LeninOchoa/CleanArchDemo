@@ -14,6 +14,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CleanArch.Infra.Data.Context;
 using CleanArch.Infra.IoC;
+using MediatR;
 using Microsoft.EntityFrameworkCore.Internal;
 
 namespace CleanArch.Mvc
@@ -46,6 +47,7 @@ namespace CleanArch.Mvc
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
 
+            services.AddMediatR(typeof(Startup));
             
             RegisteredServices(services);
         }
