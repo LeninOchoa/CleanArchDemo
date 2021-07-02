@@ -1,12 +1,11 @@
-﻿using System.Collections;
+﻿using CleanArch.Application.ViewModels;
 using System.Collections.Generic;
-using CleanArch.Application.ViewModels;
 
 namespace CleanArch.Application.Interfaces
 {
     public interface ICourseService
     {
-        CourseViewModel GetCourses();
+        IEnumerable<CourseViewModel> GetCourses();
         void Create(CourseViewModel courseViewModel);
     }
 }
